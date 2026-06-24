@@ -1,8 +1,8 @@
 # CodeCorrectorAI
 
-O **CodeCorrectorAI** é uma ferramenta inteligente desenvolvida para auxiliar desenvolvedores na análise, correção e otimização de código-fonte. Utilizando o poder dos modelos de IA generativa do Google Gemini, a aplicação oferece uma revisão detalhada que vai além de simples correções sintáticas, abordando também lógica e boas práticas de programação.
+O CodeCorrectorAI é uma ferramenta inteligente desenvolvida para auxiliar desenvolvedores na análise, correção e otimização de código-fonte. Utilizando o poder dos modelos de IA generativa do Google Gemini, a aplicação oferece uma revisão detalhada que vai além de simples correções sintáticas, abordando também lógica e boas práticas de programação.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - **Correção Automática**: Identifica e corrige erros de sintaxe, indentação e lógica de programação.
 - **Análise Técnica Detalhada**: Fornece uma explicação minuciosa dividida em:
@@ -12,13 +12,13 @@ O **CodeCorrectorAI** é uma ferramenta inteligente desenvolvida para auxiliar d
 - **Exportação em Markdown**: Permite baixar o resultado da análise em um arquivo `.md` para fácil compartilhamento e documentação.
 - **Suporte Multilinguagem**: Capaz de analisar diversas linguagens de programação reconhecidas pela IA.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Backend**: ASP.NET Core 10.0 (Razor Pages)
-- **IA**: Google Gemini API (Modelo `gemini-2.5-flash`)
+- **IA**: Google Gemini API (Modelo gemini-2.5-flash)
 - **Frontend**: Bootstrap & CSS Customizado
 
-## ⚙️ Configuração e Instalação
+## Configuração e Instalação
 
 ### Pré-requisitos
 - [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
@@ -33,7 +33,7 @@ O **CodeCorrectorAI** é uma ferramenta inteligente desenvolvida para auxiliar d
    ```
 
 2. Configure sua Chave de API:
-   No arquivo `CodeCorrectorAI/appsettings.json` (ou `appsettings.Development.json`), adicione sua chave:
+   No arquivo CodeCorrectorAI/appsettings.json (ou appsettings.Development.json), adicione sua chave:
    ```json
    {
      "Gemini": {
@@ -41,7 +41,7 @@ O **CodeCorrectorAI** é uma ferramenta inteligente desenvolvida para auxiliar d
      }
    }
    ```
-   *Alternativamente, você pode definir uma variável de ambiente `Gemini__ApiKey`.*
+   *Alternativamente, você pode definir uma variável de ambiente Gemini__ApiKey.*
 
 3. Restaure as dependências e compile o projeto:
    ```bash
@@ -52,9 +52,9 @@ O **CodeCorrectorAI** é uma ferramenta inteligente desenvolvida para auxiliar d
    ```bash
    dotnet run --project CodeCorrectorAI/CodeCorrectorAI.csproj
    ```
-   Acesse em: `http://localhost:5288`
+   Acesse em: http://localhost:5288
 
-## 🔮 Melhorias Futuras
+## Melhorias Futuras
 
 - [ ] Persistência de histórico de análises em banco de dados (SQLite/SQL Server).
 - [ ] Implementação de sistema de autenticação de usuários.
